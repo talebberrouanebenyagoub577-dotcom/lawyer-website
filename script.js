@@ -163,7 +163,7 @@
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-  document.querySelectorAll('.service-card, .about__content, .trust-pillar, .trust-card, .trust-seal, .trust__cta, .contact__info, .contact__form, .contact__map-wrap').forEach(function (el) {
+  document.querySelectorAll('.service-card__body, .about__content, .trust-pillar, .trust-card, .trust-seal, .trust__cta, .contact__info, .contact__form, .contact__map-wrap').forEach(function (el) {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
