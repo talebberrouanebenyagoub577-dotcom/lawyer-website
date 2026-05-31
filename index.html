@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مكتب محاماة متخصص | Cabinet d'avocat professionnel">
+  <title>مكتب المحاماة | Cabinet d'Avocat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">⚖</span>
+        <span class="nav__logo-text" data-ar="مكتب المحاماة" data-fr="Cabinet d'Avocat" data-en="Law Firm">مكتب المحاماة</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active" data-ar="الرئيسية" data-fr="Accueil" data-en="Home">الرئيسية</a></li>
+        <li><a href="#about" class="nav__link" data-ar="من نحن" data-fr="À propos" data-en="About">من نحن</a></li>
+        <li><a href="#services" class="nav__link" data-ar="خدماتنا" data-fr="Services" data-en="Services">خدماتنا</a></li>
+        <li><a href="#testimonials" class="nav__link" data-ar="ثقة عملائنا" data-fr="Confiance" data-en="Trust">ثقة عملائنا</a></li>
+        <li><a href="#contact" class="nav__link" data-ar="اتصل بنا" data-fr="Contact" data-en="Contact">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button type="button" class="lang-switcher__btn active" data-lang="ar">AR</button>
+          <button type="button" class="lang-switcher__btn" data-lang="fr">FR</button>
+          <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--sm" data-ar="استشارة مجانية" data-fr="Consultation gratuite" data-en="Free consultation">استشارة مجانية</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero / Home -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <span class="hero__badge" data-ar="خبرة قانونية موثوقة" data-fr="Expertise juridique de confiance" data-en="Trusted legal expertise">خبرة قانونية موثوقة</span>
+      <h1 class="hero__title">
+        <span data-ar="نحمي حقوقك" data-fr="Nous protégeons" data-en="We protect">نحمي حقوقك</span>
+        <span class="hero__title-accent" data-ar="باحترافية وثقة" data-fr="vos droits avec confiance" data-en="your rights with confidence">باحترافية وثقة</span>
+      </h1>
+      <p class="hero__description" data-ar="مكتب محاماة متخصص يقدم استشارات قانونية شاملة في مختلف المجالات. نلتزم بالدفاع عن مصالح عملائنا بأعلى معايير المهنية والنزاهة." data-fr="Cabinet d'avocat spécialisé offrant des consultations juridiques complètes dans divers domaines. Nous nous engageons à défendre les intérêts de nos clients avec les plus hauts standards de professionnalisme." data-en="A specialized law firm offering comprehensive legal consultations across various fields. We are committed to defending our clients' interests with the highest standards of professionalism and integrity.">
+        مكتب محاماة متخصص يقدم استشارات قانونية شاملة في مختلف المجالات. نلتزم بالدفاع عن مصالح عملائنا بأعلى معايير المهنية والنزاهة.
+      </p>
+      <div class="hero__buttons">
+        <a href="#contact" class="btn btn--primary" data-ar="احجز استشارتك" data-fr="Réservez votre consultation" data-en="Book your consultation">احجز استشارتك</a>
+        <a href="#services" class="btn btn--outline" data-ar="اكتشف خدماتنا" data-fr="Découvrir nos services" data-en="Explore our services">اكتشف خدماتنا</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number">15+</span>
+          <span class="hero__stat-label" data-ar="سنوات خبرة" data-fr="Années d'expérience" data-en="Years of experience">سنوات خبرة</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">500+</span>
+          <span class="hero__stat-label" data-ar="قضية ناجحة" data-fr="Affaires gagnées" data-en="Cases won">قضية ناجحة</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">98%</span>
+          <span class="hero__stat-label" data-ar="رضا العملاء" data-fr="Satisfaction client" data-en="Client satisfaction">رضا العملاء</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-ar="من نحن" data-fr="À propos" data-en="About us">من نحن</span>
+        <h2 class="section__title" data-ar="شريكك القانوني الموثوق" data-fr="Votre partenaire juridique de confiance" data-en="Your trusted legal partner">شريكك القانوني الموثوق</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image">
+          <div class="about__image-frame">
+            <div class="about__image-placeholder">
+              <span>⚖</span>
+            </div>
+          </div>
+          <div class="about__experience">
+            <span class="about__experience-number">15</span>
+            <span class="about__experience-text" data-ar="سنة من الخبرة" data-fr="Ans d'expérience" data-en="Years of experience">سنة من الخبرة</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <div class="about__panel">
+            <div class="about__text-frame">
+              <p class="about__text" data-ar="نحن مكتب محاماة رائد يجمع بين الخبرة القانونية العميقة والالتزام الثابت بخدمة عملائنا. فريقنا من المحامين المتخصصين يعمل بجد لضمان حصولكم على أفضل تمثيل قانوني ممكن." data-fr="Nous sommes un cabinet d'avocats de premier plan combinant une expertise juridique approfondie et un engagement ferme envers nos clients. Notre équipe d'avocats spécialisés travaille ardemment pour vous garantir la meilleure représentation juridique possible." data-en="We are a leading law firm combining deep legal expertise with an unwavering commitment to serving our clients. Our team of specialized attorneys works diligently to ensure you receive the best possible legal representation.">
+                نحن مكتب محاماة رائد يجمع بين الخبرة القانونية العميقة والالتزام الثابت بخدمة عملائنا. فريقنا من المحامين المتخصصين يعمل بجد لضمان حصولكم على أفضل تمثيل قانوني ممكن.
+              </p>
+            </div>
+            <div class="about__text-frame">
+              <p class="about__text" data-ar="نؤمن بأن كل عميل يستحق اهتماماً شخصياً وحلولاً قانونية مخصصة. نحن هنا لنرشدكم في كل خطوة من رحلتكم القانونية." data-fr="Nous croyons que chaque client mérite une attention personnalisée et des solutions juridiques sur mesure. Nous sommes là pour vous guider à chaque étape de votre parcours juridique." data-en="We believe every client deserves personal attention and tailored legal solutions. We are here to guide you through every step of your legal journey.">
+                نؤمن بأن كل عميل يستحق اهتماماً شخصياً وحلولاً قانونية مخصصة. نحن هنا لنرشدكم في كل خطوة من رحلتكم القانونية.
+              </p>
+            </div>
+
+            <ul class="about__features">
+              <li class="about__feature-frame">
+                <span class="about__feature-icon">✓</span>
+                <span data-ar="استشارات قانونية متخصصة" data-fr="Consultations juridiques spécialisées" data-en="Specialized legal consultations">استشارات قانونية متخصصة</span>
+              </li>
+              <li class="about__feature-frame">
+                <span class="about__feature-icon">✓</span>
+                <span data-ar="تمثيل قانوني أمام المحاكم" data-fr="Représentation devant les tribunaux" data-en="Court representation">تمثيل قانوني أمام المحاكم</span>
+              </li>
+              <li class="about__feature-frame">
+                <span class="about__feature-icon">✓</span>
+                <span data-ar="سرية تامة ومهنية عالية" data-fr="Confidentialité et professionnalisme" data-en="Full confidentiality and professionalism">سرية تامة ومهنية عالية</span>
+              </li>
+              <li class="about__feature-frame">
+                <span class="about__feature-icon">✓</span>
+                <span data-ar="دعم متعدد اللغات (عربي / فرنسي / إنجليزي)" data-fr="Support multilingue (Arabe / Français / Anglais)" data-en="Multilingual support (Arabic / French / English)">دعم متعدد اللغات (عربي / فرنسي / إنجليزي)</span>
+              </li>
+            </ul>
+
+            <div class="about__cta-frame">
+              <a href="#contact" class="btn btn--primary" data-ar="تواصل معنا" data-fr="Contactez-nous" data-en="Contact us">تواصل معنا</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Services -->
+  <section class="services section section--dark" id="services">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__tag" data-ar="خدماتنا القانونية" data-fr="Nos services juridiques" data-en="Our legal services">خدماتنا القانونية</span>
+        <h2 class="section__title" data-ar="مجالات تخصصنا" data-fr="Domaines d'expertise" data-en="Areas of expertise">مجالات تخصصنا</h2>
+        <p class="section__subtitle" data-ar="نقدم 15 مجالاً قانونياً متخصصاً لتلبية جميع احتياجاتكم" data-fr="Nous couvrons 15 domaines juridiques spécialisés pour répondre à tous vos besoins" data-en="We cover 15 specialized legal areas to meet all your needs">
+          نقدم 15 مجالاً قانونياً متخصصاً لتلبية جميع احتياجاتكم
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/civil.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون المدني" data-fr="Droit civil" data-en="Civil law">القانون المدني</h3>
+          <p class="service-card__desc" data-ar="العقود، الملكية، التعويضات، والنزاعات المدنية بين الأفراد والشركات." data-fr="Contrats, propriété, indemnisations et litiges civils entre particuliers et entreprises." data-en="Contracts, property, compensation, and civil disputes between individuals and businesses.">
+            العقود، الملكية، التعويضات، والنزاعات المدنية بين الأفراد والشركات.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/criminal.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون الجنائي" data-fr="Droit pénal" data-en="Criminal law">القانون الجنائي</h3>
+          <p class="service-card__desc" data-ar="الدفاع الجنائي، التحقيقات، والتمثيل أمام المحاكم الجزائية." data-fr="Défense pénale, enquêtes et représentation devant les tribunaux correctionnels." data-en="Criminal defense, investigations, and representation before criminal courts.">
+            الدفاع الجنائي، التحقيقات، والتمثيل أمام المحاكم الجزائية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/family.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون الأسرة" data-fr="Droit de la famille" data-en="Family law">قانون الأسرة</h3>
+          <p class="service-card__desc" data-ar="الطلاق، الحضانة، النفقة، والميراث وقضايا الأحوال الشخصية." data-fr="Divorce, garde, pension alimentaire, succession et affaires de statut personnel." data-en="Divorce, custody, alimony, inheritance, and personal status matters.">
+            الطلاق، الحضانة، النفقة، والميراث وقضايا الأحوال الشخصية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/business.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون الأعمال" data-fr="Droit des affaires" data-en="Business law">قانون الأعمال</h3>
+          <p class="service-card__desc" data-ar="تأسيس الشركات، العقود التجارية، النزاعات التجارية والامتثال القانوني." data-fr="Création d'entreprises, contrats commerciaux, litiges commerciaux et conformité juridique." data-en="Company formation, commercial contracts, business disputes, and legal compliance.">
+            تأسيس الشركات، العقود التجارية، النزاعات التجارية والامتثال القانوني.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/labor.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون العمل" data-fr="Droit du travail" data-en="Labor law">قانون العمل</h3>
+          <p class="service-card__desc" data-ar="نزاعات العمل، الفصل التعسفي، العقود والامتثال لقوانين العمل." data-fr="Litiges du travail, licenciement abusif, contrats et conformité au droit du travail." data-en="Employment disputes, wrongful termination, contracts, and labor law compliance.">
+            نزاعات العمل، الفصل التعسفي، العقود والامتثال لقوانين العمل.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/consultation.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="الاستشارات القانونية" data-fr="Conseil juridique" data-en="Legal consulting">الاستشارات القانونية</h3>
+          <p class="service-card__desc" data-ar="استشارات قانونية شاملة للأفراد والشركات قبل اتخاذ أي قرار مهم." data-fr="Conseils juridiques complets pour particuliers et entreprises avant toute décision importante." data-en="Comprehensive legal advice for individuals and businesses before any major decision.">
+            استشارات قانونية شاملة للأفراد والشركات قبل اتخاذ أي قرار مهم.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/administrative.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون الإداري" data-fr="Droit administratif" data-en="Administrative law">القانون الإداري</h3>
+          <p class="service-card__desc" data-ar="الطعون الإدارية، نزاعات الصلاحيات، والتظلمات أمام المؤسسات والإدارة العمومية." data-fr="Recours administratifs, litiges de compétence et réclamations contre l'administration publique." data-en="Administrative appeals, authority disputes, and claims against public institutions.">
+            الطعون الإدارية، نزاعات الصلاحيات، والتظلمات أمام المؤسسات والإدارة العمومية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/realestate.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون العقارات" data-fr="Droit immobilier" data-en="Real estate law">قانون العقارات</h3>
+          <p class="service-card__desc" data-ar="بيع وشراء العقارات، التسجيل العقاري، النزاعات بين الملاك والمستأجرين." data-fr="Vente et achat immobilier, enregistrement foncier, litiges propriétaires-locataires." data-en="Property sales and purchases, land registration, landlord-tenant disputes.">
+            بيع وشراء العقارات، التسجيل العقاري، النزاعات بين الملاك والمستأجرين.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/immigration.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون الهجرة" data-fr="Droit de l'immigration" data-en="Immigration law">قانون الهجرة</h3>
+          <p class="service-card__desc" data-ar="تأشيرات الإقامة، الجنسية، لم شمل الأسرة، والاستئنافات الإدارية." data-fr="Visas, résidence, nationalité, regroupement familial et recours administratifs." data-en="Residence visas, citizenship, family reunification, and administrative appeals.">
+            تأشيرات الإقامة، الجنسية، لم شمل الأسرة، والاستئنافات الإدارية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/ip.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="الملكية الفكرية" data-fr="Propriété intellectuelle" data-en="Intellectual property">الملكية الفكرية</h3>
+          <p class="service-card__desc" data-ar="حماية العلامات التجارية، براءات الاختراع، حقوق المؤلف، ومكافحة التقليد." data-fr="Protection des marques, brevets, droits d'auteur et lutte contre la contrefaçon." data-en="Trademark protection, patents, copyrights, and anti-counterfeiting.">
+            حماية العلامات التجارية، براءات الاختراع، حقوق المؤلف، ومكافحة التقليد.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/tax.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون الضريبي" data-fr="Droit fiscal" data-en="Tax law">القانون الضريبي</h3>
+          <p class="service-card__desc" data-ar="المرافعة أمام المحاكم الضريبية، الامتثال الضريبي، والنزاعات مع الإدارة الجبائية." data-fr="Contentieux fiscal, conformité tributaire et litiges avec l'administration fiscale." data-en="Tax litigation, tax compliance, and disputes with tax authorities.">
+            المرافعة أمام المحاكم الضريبية، الامتثال الضريبي، والنزاعات مع الإدارة الجبائية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/banking.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون المصرفي والمالي" data-fr="Droit bancaire et financier" data-en="Banking & finance law">القانون المصرفي والمالي</h3>
+          <p class="service-card__desc" data-ar="نزاعات القروض، الضمانات البنكية، التمويل، والامتثال للوائح المالية." data-fr="Litiges de crédit, garanties bancaires, financement et conformité financière." data-en="Loan disputes, bank guarantees, financing, and financial regulatory compliance.">
+            نزاعات القروض، الضمانات البنكية، التمويل، والامتثال للوائح المالية.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/international.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="القانون الدولي" data-fr="Droit international" data-en="International law">القانون الدولي</h3>
+          <p class="service-card__desc" data-ar="العقود الدولية، التحكيم، التجارة الخارجية، والنزاعات عبر الحدود." data-fr="Contrats internationaux, arbitrage, commerce extérieur et litiges transfrontaliers." data-en="International contracts, arbitration, foreign trade, and cross-border disputes.">
+            العقود الدولية، التحكيم، التجارة الخارجية، والنزاعات عبر الحدود.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/insurance.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون التأمين" data-fr="Droit des assurances" data-en="Insurance law">قانون التأمين</h3>
+          <p class="service-card__desc" data-ar="نزاعات التعويضات، رفض مطالبات التأمين، وحماية حقوق المؤمن لهم." data-fr="Litiges d'indemnisation, refus de sinistres et protection des assurés." data-en="Compensation disputes, claim denials, and policyholder rights protection.">
+            نزاعات التعويضات، رفض مطالبات التأمين، وحماية حقوق المؤمن لهم.
+          </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="images/services/commercial.png" alt="" loading="lazy">
+          </div>
+          <div class="service-card__body">
+          <h3 class="service-card__title" data-ar="قانون التجارة" data-fr="Droit commercial" data-en="Commercial law">قانون التجارة</h3>
+          <p class="service-card__desc" data-ar="السجل التجاري، الإفلاس، الأوراق التجارية، والنزاعات بين التجار." data-fr="Registre du commerce, faillite, effets de commerce et litiges commerciaux." data-en="Commercial register, bankruptcy, commercial paper, and merchant disputes.">
+            السجل التجاري، الإفلاس، الأوراق التجارية، والنزاعات بين التجار.
+          </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Testimonials -->
+  <section class="trust section" id="testimonials">
+    <div class="trust__banner">
+      <div class="container">
+        <div class="trust__metrics">
+          <div class="trust__metric">
+            <span class="trust__metric-value" data-count="500">0</span><span class="trust__metric-suffix">+</span>
+            <span class="trust__metric-label" data-ar="قضية ناجحة" data-fr="Affaires gagnées" data-en="Cases won">قضية ناجحة</span>
+          </div>
+          <div class="trust__metric">
+            <span class="trust__metric-value" data-count="98">0</span><span class="trust__metric-suffix">%</span>
+            <span class="trust__metric-label" data-ar="رضا العملاء" data-fr="Satisfaction client" data-en="Client satisfaction">رضا العملاء</span>
+          </div>
+          <div class="trust__metric">
+            <span class="trust__metric-value" data-count="15">0</span><span class="trust__metric-suffix">+</span>
+            <span class="trust__metric-label" data-ar="سنة خبرة" data-fr="Années d'expérience" data-en="Years of experience">سنة خبرة</span>
+          </div>
+          <div class="trust__metric">
+            <span class="trust__metric-value" data-count="4.9" data-decimal="true">0</span>
+            <span class="trust__metric-label" data-ar="تقييم العملاء" data-fr="Note clients" data-en="Client rating">تقييم العملاء</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section__header section__header--center trust__header">
+        <span class="section__tag" data-ar="ثقة عملائنا" data-fr="Confiance de nos clients" data-en="Client trust">ثقة عملائنا</span>
+        <h2 class="section__title" data-ar="لماذا يثق بنا عملاؤنا؟" data-fr="Pourquoi nos clients nous font confiance ?" data-en="Why do our clients trust us?">لماذا يثق بنا عملاؤنا؟</h2>
+        <p class="section__subtitle" data-ar="النتائج المثبتة، السرية التامة، والالتزام بحقوقكم — هذا ما يميزنا" data-fr="Des résultats prouvés, une confidentialité totale et un engagement envers vos droits — voilà ce qui nous distingue" data-en="Proven results, complete confidentiality, and commitment to your rights — that's what sets us apart">
+          النتائج المثبتة، السرية التامة، والالتزام بحقوقكم — هذا ما يميزنا
+        </p>
+      </div>
+
+      <div class="trust__pillars">
+        <article class="trust-pillar">
+          <div class="trust-pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-ar="سرية تامة" data-fr="Confidentialité totale" data-en="Full confidentiality">سرية تامة</h3>
+          <p data-ar="جميع معلوماتكم محمية بأشد معايير المهنية القانونية" data-fr="Toutes vos informations sont protégées par les plus stricts standards déontologiques" data-en="All your information is protected by the strictest professional legal standards">جميع معلوماتكم محمية بأشد معايير المهنية القانونية</p>
+        </article>
+        <article class="trust-pillar">
+          <div class="trust-pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 data-ar="نتائج مثبتة" data-fr="Résultats prouvés" data-en="Proven results">نتائج مثبتة</h3>
+          <p data-ar="سجل حافل بالنجاح في القضايا المدنية والتجارية والجنائية" data-fr="Un historique de succès en affaires civiles, commerciales et pénales" data-en="A strong track record of success in civil, commercial, and criminal cases">سجل حافل بالنجاح في القضايا المدنية والتجارية والجنائية</p>
+        </article>
+        <article class="trust-pillar">
+          <div class="trust-pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-ar="فريق متخصص" data-fr="Équipe spécialisée" data-en="Expert team">فريق متخصص</h3>
+          <p data-ar="محامون ذوو خبرة في جميع مجالات القانون المغربي والدولي" data-fr="Avocats expérimentés dans tous les domaines du droit marocain et international" data-en="Experienced attorneys across all areas of Moroccan and international law">محامون ذوو خبرة في جميع مجالات القانون المغربي والدولي</p>
+        </article>
+        <article class="trust-pillar">
+          <div class="trust-pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 data-ar="متابعة مستمرة" data-fr="Suivi continu" data-en="Ongoing support">متابعة مستمرة</h3>
+          <p data-ar="نبقى بجانبكم في كل مرحلة مع تحديثات منتظمة عن سير قضيتكم" data-fr="Nous restons à vos côtés à chaque étape avec des mises à jour régulières" data-en="We stay by your side at every stage with regular updates on your case">نبقى بجانبكم في كل مرحلة مع تحديثات منتظمة عن سير قضيتكم</p>
+        </article>
+      </div>
+
+      <div class="trust__reviews-header">
+        <h3 class="trust__reviews-title" data-ar="آراء حقيقية من عملائنا" data-fr="Témoignages authentiques" data-en="Real client reviews">آراء حقيقية من عملائنا</h3>
+        <div class="trust__rating-badge">
+          <span class="trust__rating-score">4.9</span>
+          <div>
+            <span class="trust__rating-stars">★★★★★</span>
+            <span class="trust__rating-count" data-ar="200+ مراجعة" data-fr="200+ avis" data-en="200+ reviews">200+ مراجعة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust__grid">
+        <article class="trust-card">
+          <div class="trust-card__top">
+            <span class="trust-card__verified" data-ar="✓ عميل موثق" data-fr="✓ Client vérifié" data-en="✓ Verified client">✓ عميل موثق</span>
+            <span class="trust-card__outcome" data-ar="قضية رابحة" data-fr="Affaire gagnée" data-en="Case won">قضية رابحة</span>
+          </div>
+          <div class="trust-card__stars">★★★★★</div>
+          <p class="trust-card__text" data-ar="تعاملت مع المكتب في قضية تجارية معقدة، وكان التمثيل القانوني احترافياً من البداية حتى النهاية. حصلت على نتيجة أفضل مما توقعت بفضل خبرتهم ودقة متابعتهم." data-fr="J'ai fait appel au cabinet pour un litige commercial complexe. La représentation juridique a été professionnelle du début à la fin. J'ai obtenu un résultat bien meilleur que prévu grâce à leur expertise et leur suivi rigoureux." data-en="I worked with the firm on a complex commercial case. The legal representation was professional from start to finish. I achieved a better outcome than expected thanks to their expertise and meticulous follow-up.">
+            تعاملت مع المكتب في قضية تجارية معقدة، وكان التمثيل القانوني احترافياً من البداية حتى النهاية. حصلت على نتيجة أفضل مما توقعت بفضل خبرتهم ودقة متابعتهم.
+          </p>
+          <div class="trust-card__author">
+            <div class="trust-card__avatar">ي.م</div>
+            <div>
+              <h4 class="trust-card__name" data-ar="يوسف المنصوري" data-fr="Youssef El Mansouri" data-en="Youssef El Mansouri">يوسف المنصوري</h4>
+              <span class="trust-card__role" data-ar="صاحب شركة — قانون الأعمال" data-fr="Chef d'entreprise — Droit des affaires" data-en="Business owner — Business law">صاحب شركة — قانون الأعمال</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trust-card trust-card--featured">
+          <div class="trust-card__top">
+            <span class="trust-card__verified" data-ar="✓ عميل موثق" data-fr="✓ Client vérifié" data-en="✓ Verified client">✓ عميل موثق</span>
+            <span class="trust-card__outcome" data-ar="حل ودي" data-fr="Règlement amiable" data-en="Amicable settlement">حل ودي</span>
+          </div>
+          <div class="trust-card__stars">★★★★★</div>
+          <p class="trust-card__text" data-ar="في أصعب لحظاتي العائلية، وجدت لدى هذا المكتب دعماً قانونياً وإنسانياً. شرحوا لي كل خطوة بوضوح، واحترموا خصوصيتي تماماً. أنصح بهم بكل ثقة." data-fr="Dans les moments les plus difficiles de ma vie familiale, j'ai trouvé dans ce cabinet un soutien juridique et humain. Ils m'ont expliqué chaque étape avec clarté et ont respecté ma confidentialité. Je les recommande sans hésitation." data-en="During the most difficult moments in my family life, I found both legal and human support at this firm. They explained every step clearly and fully respected my privacy. I recommend them with complete confidence.">
+            في أصعب لحظاتي العائلية، وجدت لدى هذا المكتب دعماً قانونياً وإنسانياً. شرحوا لي كل خطوة بوضوح، واحترموا خصوصيتي تماماً. أنصح بهم بكل ثقة.
+          </p>
+          <div class="trust-card__author">
+            <div class="trust-card__avatar">ف.ز</div>
+            <div>
+              <h4 class="trust-card__name" data-ar="فاطمة الزهراء" data-fr="Fatima Zahra" data-en="Fatima Zahra">فاطمة الزهراء</h4>
+              <span class="trust-card__role" data-ar="عميلة — قانون الأسرة" data-fr="Cliente — Droit de la famille" data-en="Client — Family law">عميلة — قانون الأسرة</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trust-card">
+          <div class="trust-card__top">
+            <span class="trust-card__verified" data-ar="✓ عميل موثق" data-fr="✓ Client vérifié" data-en="✓ Verified client">✓ عميل موثق</span>
+            <span class="trust-card__outcome" data-ar="استرجاع كامل للحقوق" data-fr="Récupération intégrale" data-en="Full rights recovered">استرجاع كامل للحقوق</span>
+          </div>
+          <div class="trust-card__stars">★★★★★</div>
+          <p class="trust-card__text" data-ar="بعد فصل تعسفي من العمل، ساعدني المحامون في استرجاع حقوقي كاملة. التواصل كان مستمراً والمتابعة دقيقة. مكتب يستحق الثقة." data-fr="Après un licenciement abusif, les avocats m'ont aidé à récupérer l'intégralité de mes droits. La communication était constante et le suivi précis. Un cabinet digne de confiance." data-en="After a wrongful dismissal, the attorneys helped me recover my full rights. Communication was consistent and follow-up was precise. A firm truly worthy of trust.">
+            بعد فصل تعسفي من العمل، ساعدني المحامون في استرجاع حقوقي كاملة. التواصل كان مستمراً والمتابعة دقيقة. مكتب يستحق الثقة.
+          </p>
+          <div class="trust-card__author">
+            <div class="trust-card__avatar">ك.ب</div>
+            <div>
+              <h4 class="trust-card__name" data-ar="كريم بن علي" data-fr="Karim Benali" data-en="Karim Benali">كريم بن علي</h4>
+              <span class="trust-card__role" data-ar="موظف — قانون العمل" data-fr="Employé — Droit du travail" data-en="Employee — Labor law">موظف — قانون العمل</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="trust__seals">
+        <div class="trust-seal">
+          <span class="trust-seal__icon">⚖</span>
+          <span data-ar="محامون معتمدون" data-fr="Avocats certifiés" data-en="Certified attorneys">محامون معتمدون</span>
+        </div>
+        <div class="trust-seal">
+          <span class="trust-seal__icon">🔒</span>
+          <span data-ar="سرية مهنية مضمونة" data-fr="Secret professionnel garanti" data-en="Guaranteed professional secrecy">سرية مهنية مضمونة</span>
+        </div>
+        <div class="trust-seal">
+          <span class="trust-seal__icon">🏆</span>
+          <span data-ar="عضو نقابة المحامين" data-fr="Membre du barreau" data-en="Bar association member">عضو نقابة المحامين</span>
+        </div>
+        <div class="trust-seal">
+          <span class="trust-seal__icon">🌍</span>
+          <span data-ar="دعم ثلاث لغات" data-fr="Support trilingue" data-en="Trilingual support">دعم ثلاث لغات</span>
+        </div>
+      </div>
+
+      <div class="trust__cta">
+        <p data-ar="انضموا إلى مئات العملاء الذين وثقوا بنا" data-fr="Rejoignez des centaines de clients qui nous ont fait confiance" data-en="Join hundreds of clients who trusted us">انضموا إلى مئات العملاء الذين وثقوا بنا</p>
+        <a href="#contact" class="btn btn--primary" data-ar="ابدأ استشارتك المجانية" data-fr="Commencez votre consultation gratuite" data-en="Start your free consultation">ابدأ استشارتك المجانية</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-ar="اتصل بنا" data-fr="Contact" data-en="Contact">اتصل بنا</span>
+        <h2 class="section__title" data-ar="نحن هنا لمساعدتكم" data-fr="Nous sommes là pour vous aider" data-en="We are here to help you">نحن هنا لمساعدتكم</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4 data-ar="العنوان" data-fr="Adresse" data-en="Address">العنوان</h4>
+              <p data-ar="123 شارع الحرية، الدار البيضاء، المغرب" data-fr="123 Avenue de la Liberté, Casablanca, Maroc" data-en="123 Liberty Avenue, Casablanca, Morocco">123 شارع الحرية، الدار البيضاء، المغرب</p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4 data-ar="الهاتف" data-fr="Téléphone" data-en="Phone">الهاتف</h4>
+              <p dir="ltr">+212 6 00 00 00 00</p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4 data-ar="البريد الإلكتروني" data-fr="Email" data-en="Email">البريد الإلكتروني</h4>
+              <p dir="ltr">contact@cabinet-avocat.ma</p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4 data-ar="ساعات العمل" data-fr="Heures d'ouverture" data-en="Opening hours">ساعات العمل</h4>
+              <p data-ar="الإثنين - الجمعة: 9:00 - 18:00" data-fr="Lundi - Vendredi: 9h00 - 18h00" data-en="Monday - Friday: 9:00 AM - 6:00 PM">الإثنين - الجمعة: 9:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <div class="form__group">
+            <label for="name" data-ar="الاسم الكامل" data-fr="Nom complet" data-en="Full name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form__group">
+            <label for="email" data-ar="البريد الإلكتروني" data-fr="Email" data-en="Email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required dir="ltr">
+          </div>
+          <div class="form__group">
+            <label for="phone" data-ar="رقم الهاتف" data-fr="Téléphone" data-en="Phone number">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" dir="ltr">
+          </div>
+          <div class="form__group">
+            <label for="service" data-ar="نوع الخدمة" data-fr="Type de service" data-en="Service type">نوع الخدمة</label>
+            <select id="service" name="service">
+              <option value="civil" data-ar="القانون المدني" data-fr="Droit civil" data-en="Civil law">القانون المدني</option>
+              <option value="criminal" data-ar="القانون الجنائي" data-fr="Droit pénal" data-en="Criminal law">القانون الجنائي</option>
+              <option value="family" data-ar="قانون الأسرة" data-fr="Droit de la famille" data-en="Family law">قانون الأسرة</option>
+              <option value="business" data-ar="قانون الأعمال" data-fr="Droit des affaires" data-en="Business law">قانون الأعمال</option>
+              <option value="labor" data-ar="قانون العمل" data-fr="Droit du travail" data-en="Labor law">قانون العمل</option>
+              <option value="administrative" data-ar="القانون الإداري" data-fr="Droit administratif" data-en="Administrative law">القانون الإداري</option>
+              <option value="realestate" data-ar="قانون العقارات" data-fr="Droit immobilier" data-en="Real estate law">قانون العقارات</option>
+              <option value="immigration" data-ar="قانون الهجرة" data-fr="Droit de l'immigration" data-en="Immigration law">قانون الهجرة</option>
+              <option value="ip" data-ar="الملكية الفكرية" data-fr="Propriété intellectuelle" data-en="Intellectual property">الملكية الفكرية</option>
+              <option value="tax" data-ar="القانون الضريبي" data-fr="Droit fiscal" data-en="Tax law">القانون الضريبي</option>
+              <option value="banking" data-ar="القانون المصرفي والمالي" data-fr="Droit bancaire et financier" data-en="Banking & finance law">القانون المصرفي والمالي</option>
+              <option value="international" data-ar="القانون الدولي" data-fr="Droit international" data-en="International law">القانون الدولي</option>
+              <option value="insurance" data-ar="قانون التأمين" data-fr="Droit des assurances" data-en="Insurance law">قانون التأمين</option>
+              <option value="commercial" data-ar="قانون التجارة" data-fr="Droit commercial" data-en="Commercial law">قانون التجارة</option>
+              <option value="consultation" data-ar="استشارة عامة" data-fr="Consultation générale" data-en="General consultation">استشارة عامة</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" data-ar="رسالتكم" data-fr="Votre message" data-en="Your message">رسالتكم</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-ar="إرسال الرسالة" data-fr="Envoyer le message" data-en="Send message">إرسال الرسالة</button>
+        </form>
+      </div>
+
+      <div class="contact__map-wrap">
+        <div class="contact__map-header">
+          <h3 data-ar="موقع المكتب" data-fr="Notre emplacement" data-en="Our location">موقع المكتب</h3>
+          <a href="https://www.google.com/maps/search/?api=1&query=33.5731,-7.5898" class="contact__map-link" target="_blank" rel="noopener noreferrer" data-ar="فتح في خرائط Google ←" data-fr="Ouvrir dans Google Maps →" data-en="Open in Google Maps →">فتح في خرائط Google ←</a>
+        </div>
+        <div class="contact__map">
+          <iframe
+            title="Google Maps — Casablanca, Morocco"
+            src="https://maps.google.com/maps?q=33.5731,-7.5898&hl=ar&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="nav__logo-icon">⚖</span>
+            <span data-ar="مكتب المحاماة" data-fr="Cabinet d'Avocat" data-en="Law Firm">مكتب المحاماة</span>
+          </a>
+          <p data-ar="نقدم خدمات قانونية احترافية بأعلى معايير الجودة والمهنية." data-fr="Nous offrons des services juridiques professionnels aux plus hauts standards de qualité." data-en="We provide professional legal services to the highest standards of quality and excellence.">
+            نقدم خدمات قانونية احترافية بأعلى معايير الجودة والمهنية.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4 data-ar="روابط سريعة" data-fr="Liens rapides" data-en="Quick links">روابط سريعة</h4>
+          <ul>
+            <li><a href="#home" data-ar="الرئيسية" data-fr="Accueil" data-en="Home">الرئيسية</a></li>
+            <li><a href="#about" data-ar="من نحن" data-fr="À propos" data-en="About">من نحن</a></li>
+            <li><a href="#services" data-ar="خدماتنا" data-fr="Services" data-en="Services">خدماتنا</a></li>
+            <li><a href="#testimonials" data-ar="ثقة عملائنا" data-fr="Confiance" data-en="Trust">ثقة عملائنا</a></li>
+            <li><a href="#contact" data-ar="اتصل بنا" data-fr="Contact" data-en="Contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 data-ar="تواصل معنا" data-fr="Contactez-nous" data-en="Contact us">تواصل معنا</h4>
+          <p dir="ltr">+212 6 00 00 00 00</p>
+          <p dir="ltr">contact@cabinet-avocat.ma</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 <span data-ar="مكتب المحاماة. جميع الحقوق محفوظة." data-fr="Cabinet d'Avocat. Tous droits réservés." data-en="Law Firm. All rights reserved.">مكتب المحاماة. جميع الحقوق محفوظة.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Button -->
+  <a href="#contact" class="floating-contact" id="floatingContact" aria-label="Contact us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span data-ar="تواصل معنا" data-fr="Contactez-nous" data-en="Contact us">تواصل معنا</span>
+  </a>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/212600000000" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
